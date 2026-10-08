@@ -18,7 +18,7 @@ export function exportToCSV<T extends Record<string, any>>(
   const rows = data.map((item) =>
     columns
       .map((col) => {
-        let val = item[col.key]
+        let val: any = item[col.key]
         if (col.formatter) {
           val = col.formatter(val)
         }

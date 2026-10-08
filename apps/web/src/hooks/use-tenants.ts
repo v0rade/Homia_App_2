@@ -15,7 +15,7 @@ export const useTenant = (id: string) => {
   return useQuery({
     queryKey: ["tenants", id],
     queryFn: async () => {
-      const { data } = await api.get(\`/tenants/\${id}\`)
+      const { data } = await api.get(`/tenants/${id}`)
       return data
     },
     enabled: !!id,

@@ -416,7 +416,7 @@ export default function RoomsPage() {
   const [selectedRoom, setSelectedRoom] = useState<RoomData | null>(null);
   const [drawerOpen, setDrawerOpen] = useState(false);
 
-  const floors = useMemo(() => [...new Set(mockRooms.map((r) => r.floor))].sort(), []);
+  const floors = useMemo(() => Array.from(new Set(mockRooms.map((r) => r.floor))).sort(), []);
 
   const counts = useMemo(() => {
     const all = mockRooms.length;
