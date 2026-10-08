@@ -12,5 +12,13 @@
   "devDependencies": {
     "turbo": "^2.0.0",
     "typescript": "^5.4.0"
+  },
+  "overrides": {
+    "next": "^15.5.27",
+    "braces": "3.0.3",
+    "micromatch": "4.0.8",
+    "picomatch": "2.3.1",
+    "postcss": "^8.5.3",
+    "postcss-selector-parser": "^7.1.6"
   }
 }
