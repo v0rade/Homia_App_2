@@ -9,7 +9,7 @@ import { ConfigService } from '@nestjs/config';
 import * as bcrypt from 'bcrypt';
 import { prisma } from '@homia-os/database';
 import { RegisterDto } from './dto/register.dto';
-import { UserRole } from '@prisma/client';
+import { UserRole } from '@homia-os/types';
 
 @Injectable()
 export class AuthService {
