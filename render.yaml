@@ -21,15 +21,9 @@ services:
           name: homia-postgres
           property: connectionString
       - key: REDIS_HOST
-        fromService:
-          type: redis
-          name: homia-redis
-          property: host
+        value: localhost
       - key: REDIS_PORT
-        fromService:
-          type: redis
-          name: homia-redis
-          property: port
+        value: 6379
       - key: JWT_SECRET
         generateValue: true
       - key: JWT_REFRESH_SECRET
